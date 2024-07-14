@@ -1,15 +1,21 @@
 import React from "react";
 
-export function Rating() {
+export function Rating(props: any) {
+  let stars = [];
+  
+  for (let i = 0; i < 5; i++) {
+      if(i < props.num) {
+        stars.push(<Star selected = {true} key = {i}/>);
+      } else {
+        stars.push(<Star selected = {false} key = {i}/>);
+      }
+  }
+  
   return (
     <div>
-      <Star selected={true}/>
-      <Star selected={true}/>
-      <Star selected={false}/>
-      <Star selected={false}/>
-      <Star selected={false}/>
+      {stars}
     </div>
-  );
+  )
 }
 
 function Star(props: any) {
@@ -23,3 +29,5 @@ function Star(props: any) {
     <span> star </span>
   )
 }
+
+//zz
