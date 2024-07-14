@@ -6,7 +6,8 @@ import {Rating} from "./components/Rating/Rating";
 function App() {
   return (
     <div>
-      <AppTitle/>
+      <PageTitle title={'This is APP component'}/>
+      <PageTitle title={'My friends'}/>
       <Accordion/>
       <hr/>
       Article 1
@@ -18,8 +19,8 @@ function App() {
   );
 }
 
-function AppTitle() {
-  return <>This is APP component</>
+function PageTitle(props: any) {
+  return <h1>{props.title}</h1>
 }
 
 export default App;

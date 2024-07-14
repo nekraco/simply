@@ -29,5 +29,3 @@ function Star(props: any) {
     <span> star </span>
   )
 }
-
-//zz
