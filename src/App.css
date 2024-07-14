@@ -6,3 +6,17 @@ html {
 b {
 	color: yellow;
 }
+
+.OnOff>span {
+	display: inline-block;
+	font-size: 50px;
+	margin: 3px;
+	padding: 2px;
+}
+
+.OnOff>span:last-child {
+	width: 30px;
+	height: 30px;
+	border-radius: 20px;
+	font-size: 20px;
+}

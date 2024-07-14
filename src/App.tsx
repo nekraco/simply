@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
+import {OnOff} from "./components/OnOff/OnOff";
 
 function App() {
   return (
     <div>
+      <OnOff value={false}/>
       <PageTitle title={'This is APP component'}/>
       <PageTitle title={'My friends'}/>
       <Accordion title={'Menu'} collapsed={false}/>
