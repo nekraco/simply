@@ -3,6 +3,9 @@ import './App.css';
 import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
+import {
+  UncontrolledAccordion
+} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 
 
 
@@ -12,7 +15,9 @@ function App() {
       <OnOff/>
       <PageTitle title={'This is APP component'}/>
       <PageTitle title={'My friends'}/>
-      <Accordion title={'TodoList'} collapsed={false}/>
+      <UncontrolledAccordion title={'Menu'}/>
+      <UncontrolledAccordion title={'Checklist'}/>
+
       {/*<hr/>*/}
       {/*Article 1*/}
       {/*<Rating num={4}/>*/}
