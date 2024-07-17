@@ -6,9 +6,6 @@ type AccordionPropsType = {
 }
 
 export function Accordion(props: AccordionPropsType) {
-
-  let accordionBody = !props.collapsed && <AccordionBody/>
-
   return (
     <div>
       <AccordionTitle title={props.title}/>

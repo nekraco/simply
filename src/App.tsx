@@ -4,22 +4,21 @@ import {Accordion} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 
+
+
 function App() {
   return (
-    <div>
-      <OnOff/>
-      <OnOff/>
+    <div className={'App'}>
       <OnOff/>
       <PageTitle title={'This is APP component'}/>
       <PageTitle title={'My friends'}/>
-      <Accordion title={'Menu'} collapsed={false}/>
-      <Accordion title={'Checklist'} collapsed={true}/>
-      <hr/>
-      Article 1
-      <Rating num={4}/>
-      <hr/>
-      Article 2
-      <Rating num={1}/>
+      <Accordion title={'TodoList'} collapsed={false}/>
+      {/*<hr/>*/}
+      {/*Article 1*/}
+      {/*<Rating num={4}/>*/}
+      {/*<hr/>*/}
+      {/*Article 2*/}
+      {/*<Rating num={1}/>*/}
     </div>
   );
 }

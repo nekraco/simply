@@ -3,6 +3,11 @@ html {
 	color: cadetblue;
 }
 
+.App {
+	width: 1000px;
+	margin: auto;
+}
+
 b {
 	color: yellow;
 }
