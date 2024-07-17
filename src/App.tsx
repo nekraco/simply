@@ -15,9 +15,9 @@ import {
 function App() {
   return (
     <div className={'App'}>
-      <OnOff/>
-      <PageTitle title={'This is APP component'}/>
-      <PageTitle title={'My friends'}/>
+      {/*<OnOff/>*/}
+      {/*<PageTitle title={'This is APP component'}/>*/}
+      {/*<PageTitle title={'My friends'}/>*/}
       <UncontrolledRating/>
       <UncontrolledAccordion title={'Menu'}/>
       <UncontrolledAccordion title={'Checklist'}/>
