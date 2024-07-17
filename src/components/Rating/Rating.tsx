@@ -26,7 +26,7 @@ type StarPropsType = {
   selected: boolean
 }
 
-function Star(props: StarPropsType) {
+export function Star(props: StarPropsType) {
   //debugger
   if(props.selected) {
     return (

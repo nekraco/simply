@@ -9,9 +9,19 @@ export function UncontrolledAccordion(props: UnAccordionPropsType) {
 
   let [collapsed, setCollapsed] = useState(true);
 
+  let butStyle = {
+    display: 'block',
+    marginTop: '40px',
+  }
+
   return (
     <div>
-      <button onClick={() => setCollapsed(!collapsed)}>TOGGLE</button>
+      <button onClick={() => setCollapsed(!collapsed)}
+              style={{marginTop: '40px', background: '#cca'}}
+      >
+        TOGGLE
+      </button>
+
       <AccordionTitle title={props.title}/>
       {!collapsed && <AccordionBody/>}
       <hr/>
