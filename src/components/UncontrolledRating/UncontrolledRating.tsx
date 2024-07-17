@@ -2,6 +2,11 @@ import React, {useState} from "react";
 
 
 export function UncontrolledRating() {
+  const butStyle = {
+    borderRadius: '10px',
+    background: 'gray',
+    border: 0,
+  }
 
   const hrStyle = {
     width: '300px',
@@ -9,42 +14,39 @@ export function UncontrolledRating() {
     border: 'solid #a81 2px',
   }
 
+  const [rating, setRating] = useState(4);
+
   return (
-
-
     <div>
-      <Star number={1}/>
-      <Star number={2}/>
-      <Star number={3}/>
-      <Star number={4}/>
-      <Star number={5}/>
+      <Star selected={rating > 0}/>
+      <button style={butStyle} onClick={() => setRating(1)}>1</button>
+
+      <Star selected={rating > 1}/>
+      <button style={butStyle} onClick={() => setRating(2)}>2</button>
+
+      <Star selected={rating > 2}/>
+      <button style={butStyle} onClick={() => setRating(3)}>3</button>
+
+      <Star selected={rating > 3}/>
+      <button style={butStyle} onClick={() => setRating(4)}>4</button>
+
+      <Star selected={rating > 4}/>
+      <button style={butStyle} onClick={() => setRating(5)}>5</button>
 
       <hr style={hrStyle}/>
     </div>
   )
 }
 
+
 type StarPropsType = {
-  number: number
+  selected: boolean
 }
 
 function Star(props: StarPropsType) {
-
-  const butStyle = {
-    borderRadius: '10px',
-    background: 'gray',
-    border: 0,
-  }
-
-  const [glow, setGlow] = useState(false);
-
-
   return (
     <>
-      {glow ? <span> <b>star</b> </span> : <span> star </span>}
-      <button style={butStyle} onClick={() => setGlow(!glow)}>
-      {props.number}
-    </button> ||
+      {props.selected ? <span><b> star </b></span> : <span> star </span>}
     </>
   )
 }

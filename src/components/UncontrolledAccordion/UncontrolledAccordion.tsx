@@ -9,11 +9,6 @@ export function UncontrolledAccordion(props: UnAccordionPropsType) {
 
   let [collapsed, setCollapsed] = useState(true);
 
-  let butStyle = {
-    display: 'block',
-    marginTop: '40px',
-  }
-
   return (
     <div>
       <button onClick={() => setCollapsed(!collapsed)}
